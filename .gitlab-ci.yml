@@ -1,23 +1,14 @@
-default:
-  image: ruby:2.5
+docker-build-master:
+  # Official docker image.
+  image: docker:latest
+  stage: build
+  services:
+    - docker:dind
   before_script:
-    - apt-get update
-    - apt-get install -y sqlite3 libsqlite3-dev nodejs
-    - ruby -v
-    - which ruby
-#    - gem install bundler --no-document
-#    - bundle install --jobs $(nproc) "${FLAGS[@]}"
-  build_image:
-    script:
-      - docker login lockwebsitereg.azurecr.io -u lockwebsitereg -p TTundFwjKqc0p5MlLG1nq2BeMY=aTu32
-      - docker build -t thereisanevening .
-      - docker tag thereisanevening  lockwebsitereg.azurecr.io/thereisanevening
-      - docker push lockwebsitereg.azurecr.io/thereisanevening
-
-rspec:
+    - docker login lockwebsitereg.azurecr.io -u lockwebsitereg -p TTundFwjKqc0p5MlLG1nq2BeMY=aTu32
   script:
-    - bundle exec rspec
-
-rubocop:
-  script:
-    - bundle exec rubocop
+    - docker build -t thereisanevening .
+    - docker tag thereisanevening  lockwebsitereg.azurecr.io/thereisanevening
+    - docker push lockwebsitereg.azurecr.io/thereisanevening
+  only:
+    - master
