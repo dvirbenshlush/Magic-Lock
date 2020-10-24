@@ -5,8 +5,14 @@ default:
     - apt-get install -y sqlite3 libsqlite3-dev nodejs
     - ruby -v
     - which ruby
-    - gem install bundler --no-document
-    - bundle install --jobs $(nproc) "${FLAGS[@]}"
+#    - gem install bundler --no-document
+#    - bundle install --jobs $(nproc) "${FLAGS[@]}"
+  build_image:
+    script:
+      - docker login lockwebsitereg.azurecr.io -u lockwebsitereg -p TTundFwjKqc0p5MlLG1nq2BeMY=aTu32
+      - docker build -t thereisanevening .
+      - docker tag thereisanevening  lockwebsitereg.azurecr.io/thereisanevening
+      - docker push lockwebsitereg.azurecr.io/thereisanevening
 
 rspec:
   script:
