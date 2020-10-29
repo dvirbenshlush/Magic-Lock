@@ -32,7 +32,7 @@ def ServicesListAboutUs():
 @app.route('/services_list_for_price_guide')
 def ServicesListPriceGuide():
     
-    data = read_from_json_file('/price_guide.json')
+    data = read_from_json_file('/gitprice_guide.json')
     keys = []
     for key in data.keys():
         keys.append(key)
