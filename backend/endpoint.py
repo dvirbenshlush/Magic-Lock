@@ -1,18 +1,20 @@
 from flask import Flask, request, send_file, jsonify
 from files_utilities import read_from_file, read_from_image_file, read_from_json_file
 from flask.wrappers import Response
+from flask_cors import CORS
 
 app = Flask('MagicLock')
+CORS(app)
 
 @app.route('/about_us')
 def AboutUs():
     return {
-        "data": read_from_file('backend/about_us.txt')
+        "data": read_from_file('about_us.txt')
     }
 
 @app.route('/services')
 def Services():
-    data = read_from_json_file('backend/services.json')
+    data = read_from_json_file('services.json')
     key = request.args.get('key')
     if key in data:    
         return data[key]
@@ -29,7 +31,8 @@ def ServicesListAboutUs():
 
 @app.route('/services_list_for_price_guide')
 def ServicesListPriceGuide():
-    data = read_from_json_file('backend/price_guide.json')
+    
+    data = read_from_json_file('/gitprice_guide.json')
     keys = []
     for key in data.keys():
         keys.append(key)
