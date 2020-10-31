@@ -55,4 +55,4 @@ def ImageList():
 @app.route('/get_image')
 def GetImage():
     image = request.args.get('image')
-    return send_file('backend/{}'.for mat(image) , mimetype='image/png')
+    return send_file('backend/{}'.format(image) , mimetype='image/png')
