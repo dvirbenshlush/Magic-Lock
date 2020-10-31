@@ -1,14 +1,5 @@
-import ReactDOM from 'react-dom';
 import React, { Component } from 'react';
 
-import {
-
-
-    BrowserRouter as Router,
-    Switch,
-    Route,
-    Link
-   } from 'react-router-dom';
 
    const SERVER_ADDRESS = process.env.NODE_ENV === "development" ? 'http://localhost:5000' : "";
 
