@@ -1,12 +1,8 @@
 import React, { Component } from 'react'
 import Navigation from './components/navigation';
 import Header from './components/header';
-import Features from './components/features';
 import About from './components/about';
-import Services from './components/services';
 import Gallery from './components/gallery';
-import Testimonials from './components/testimonials';
-import Team from './components/Team';
 import Contact from './components/contact';
 import JsonData from './data/data.json';
 
@@ -27,15 +23,17 @@ export class App extends Component {
       <div>
         <Navigation />
         <Header data={this.state.landingPageData.Header} />
-        <Features data={this.state.landingPageData.Features} />
         <About data={this.state.landingPageData.About} />
-        <Services data={this.state.landingPageData.Services} />
         <Gallery />
-        <Testimonials data={this.state.landingPageData.Testimonials} />
-        <Team data={this.state.landingPageData.Team} />
         <Contact data={this.state.landingPageData.Contact} />
-      </div>
-    )
+      
+      <span class="contact">
+   <a href="tel:7045089300"> tel </a>
+   <a href="https://api.whatsapp.com/send?phone=9549977744"  title=""> whatsapp  </a>
+   <a href="https://waze.com/ul?q={355 W Martin Luther King Jr Blvd, Charlotte, North Carolina}" title=""> waze </a>
+   </span>
+</div>
+   )
   }
 }
 

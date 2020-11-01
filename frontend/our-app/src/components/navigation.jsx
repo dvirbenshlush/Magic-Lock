@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-
 export class Navigation extends Component {
   render() {
     return (
@@ -19,7 +18,9 @@ export class Navigation extends Component {
               <span className="icon-bar"></span>{" "}
             </button>
             <a className="navbar-brand page-scroll" href="#page-top">
-              Magic-lock
+            {/* <span className="logo"> */}
+              {/* <img src= "img/magic-lock-logo.png" alt="logo"   /></span> */}
+            
             </a>{" "}
           </div>
 
@@ -28,10 +29,11 @@ export class Navigation extends Component {
             id="bs-example-navbar-collapse-1"
           >
             <ul className="nav navbar-nav navbar-right">
+            
               <li>
-                <a href="#features" className="page-scroll">
+                {/* <a href="#features" className="page-scroll">
                   Features
-                </a>
+                </a> */}
               </li>
               <li>
                 <a href="#about" className="page-scroll">
@@ -39,9 +41,9 @@ export class Navigation extends Component {
                 </a>
               </li>
               <li>
-                <a href="#services" className="page-scroll">
+                {/* <a href="#services" className="page-scroll">
                   Services
-                </a>
+                </a> */}
               </li>
               <li>
                 <a href="#portfolio" className="page-scroll">
@@ -49,21 +51,23 @@ export class Navigation extends Component {
                 </a>
               </li>
               <li>
-                <a href="#testimonials" className="page-scroll">
+                {/* <a href="#testimonials" className="page-scroll">
                   Testimonials
-                </a>
+                </a> */}
               </li>
               <li>
-                <a href="#team" className="page-scroll">
+                {/* <a href="#team" className="page-scroll">
                   Team
-                </a>
+                </a> */}
               </li>
               <li>
                 <a href="#contact" className="page-scroll">
                   Contact
                 </a>
               </li>
+            
             </ul>
+            <img src= "img/magic-lock-logo.png" alt="logo"   />
           </div>
         </div>
       </nav>
