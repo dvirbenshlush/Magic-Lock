@@ -41,7 +41,10 @@ export class App extends Component {
 export default App;
 
 const SocialMedia = styled.div`
-  position: fixed;
+  position: sticky;
   bottom: 0;
-  margin-left: 50%;
+  left: 0;
+  right: 0;
+  justify-content: center;
+  display: flex;
 `
