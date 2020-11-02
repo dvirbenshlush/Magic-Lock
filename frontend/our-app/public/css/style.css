@@ -92,8 +92,9 @@ hr {
 }
 
 #menu.navbar-default {
-    background-color: #fff;
-    border-color: rgba(231, 231, 231, 0);
+    transition: all linear .7s;
+    color: blueviolet;
+    background-color: rgba(0, 0, 0, .8);
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.15)
 }
 
@@ -108,7 +109,7 @@ hr {
 #menu.navbar-default .navbar-nav>li>a {
     font-family: 'Lato', sans-serif;
     text-transform: uppercase;
-    color: #555;
+    color: rgb(201, 167, 17);
     font-size: 15px;
     font-weight: 400;
     padding: 8px 2px;
