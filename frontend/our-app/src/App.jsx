@@ -27,10 +27,10 @@ export class App extends Component {
         <Gallery />
         <Contact data={this.state.landingPageData.Contact} />
       
-      <span class="contact">
-   <a href="tel:7045089300"> tel </a>
-   <a href="https://api.whatsapp.com/send?phone=9549977744"  title=""> whatsapp  </a>
-   <a href="https://waze.com/ul?q={355 W Martin Luther King Jr Blvd, Charlotte, North Carolina}" title=""> waze </a>
+      <span>
+   <a href="tel:7045089300"> <img src="img/call_img.jfif" width="50"></img></a>
+   <a href="https://api.whatsapp.com/send?phone=9549977744"  title=""> <img src="img/facebook_img.png" width="50"></img>  </a>
+   <a href="https://waze.com/ul?q={355 W Martin Luther King Jr Blvd, Charlotte, North Carolina}" title=""> <img src="img/instagram_img.jfif" width="50"></img> </a>
    </span>
 </div>
    )
