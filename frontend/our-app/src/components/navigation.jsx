@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-
 export class Navigation extends Component {
   render() {
     return (
@@ -19,7 +18,9 @@ export class Navigation extends Component {
               <span className="icon-bar"></span>{" "}
             </button>
             <a className="navbar-brand page-scroll" href="#page-top">
-              Magic-lock
+            {/* <span className="logo"> */}
+              {/* <img src= "img/magic-lock-logo.png" alt="logo"   /></span> */}
+            
             </a>{" "}
           </div>
 
@@ -27,20 +28,12 @@ export class Navigation extends Component {
             className="collapse navbar-collapse"
             id="bs-example-navbar-collapse-1"
           >
+            
             <ul className="nav navbar-nav navbar-right">
-              <li>
-                <a href="#features" className="page-scroll">
-                  Features
-                </a>
-              </li>
+            
               <li>
                 <a href="#about" className="page-scroll">
                   About
-                </a>
-              </li>
-              <li>
-                <a href="#services" className="page-scroll">
-                  Services
                 </a>
               </li>
               <li>
@@ -49,21 +42,19 @@ export class Navigation extends Component {
                 </a>
               </li>
               <li>
-                <a href="#testimonials" className="page-scroll">
-                  Testimonials
-                </a>
-              </li>
-              <li>
-                <a href="#team" className="page-scroll">
-                  Team
-                </a>
-              </li>
-              <li>
                 <a href="#contact" className="page-scroll">
                   Contact
                 </a>
               </li>
+              <li>
+            <a href="tel:7045089300">
+                    <span>Call Us</span>
+                    <br/>
+                    704-508-9300
+                    </a>
+                    </li>
             </ul>
+            <img src= "img/magic-lock-logo.png" alt="logo"   />
           </div>
         </div>
       </nav>
