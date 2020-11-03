@@ -87,7 +87,7 @@ hr {
 /* Navigation */
 
 #menu {
-    padding: 15px;
+    padding: 0.5px;
     transition: all 0.8s;
 }
 
@@ -109,7 +109,7 @@ hr {
 #menu.navbar-default .navbar-nav>li>a {
     font-family: 'Lato', sans-serif;
     text-transform: uppercase;
-    color: rgb(201, 167, 17);
+    color: rgb(238, 237, 231);
     font-size: 15px;
     font-weight: 400;
     padding: 8px 2px;
@@ -244,7 +244,8 @@ a:focus,
 .intro {
     display: table;
     width: 100%;
-    padding: 0;
+    height: 100%;
+    padding: 0%;
     background: url(../img/orimg.jpeg) center center no-repeat;
     background-color: #e5e5e5;
     -webkit-background-size: cover;
