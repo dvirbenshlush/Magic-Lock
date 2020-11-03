@@ -8,36 +8,36 @@ import $ from 'jquery';
 
 export class App extends Component {
   state = {
-    resumeData : {},
+    resumeData: {},
   }
-  getResumeData(){
+  getResumeData() {
     $.ajax({
-      url:'/data.json',
-      dataType:'json',
+      url: '/data.json',
+      dataType: 'json',
       cache: false,
-      success: function(data){
-        this.setState({resumeData: data});
+      success: function (data) {
+        this.setState({ resumeData: data });
       }.bind(this),
-      error: function(xhr, status, err){
+      error: function (xhr, status, err) {
         console.log(err);
         alert(err);
       }
     });
   }
 
-  componentDidMount(){
+  componentDidMount() {
     this.getResumeData();
   }
 
   render() {
     return (
-      
+
       <div>
         <Navigation />
-        <Header data={this.state.resumeData.Header}/>
-        <About  data={this.state.resumeData.About}/>
+        <Header data={this.state.resumeData.Header} />
+        <About data={this.state.resumeData.About} />
         <Gallery />
-        <Contact  data={this.state.resumeData.Contact}/>
+        <Contact data={this.state.resumeData.Contact} />
 
         {/* <div class="boxfloatbottom">
         <a href="tel:7045089300" style="float:left;margin-left: 20px;" title="">    </a>
@@ -45,6 +45,7 @@ export class App extends Component {
         <a href="https://waze.com/ul?q={355 W Martin Luther King Jr Blvd, Charlotte, North Carolina}" style="float:left;margin-left: 20px;" title="">            <p style="display: inline-block;border-radius: 60px;box-shadow: 3px 3px 5px #888;color: #fff;background-color: #41d5ff;width: 70px;height: 70px;border: 2px solid #fff;font-size: 35px;padding: 0 20px;">                <i class="icon ion-android-pin" style="color:#fff;"></i>            </p>        </a>
     </div> */}
       </div>
+    
     )
   }
 }
