@@ -29,9 +29,9 @@ export class App extends Component {
         <Contact data={this.state.landingPageData.Contact} />
 
         <SocialMedia>
-          <a href="tel:7045089300"> <img src="img/call_img.jfif" width="50"></img></a>
-          <a href="https://api.whatsapp.com/send?phone=9549977744" title=""> <img src="img/facebook_img.png" width="50"></img>  </a>
-          <a href="https://waze.com/ul?q={355 W Martin Luther King Jr Blvd, Charlotte, North Carolina}" title=""> <img src="img/instagram_img.jfif" width="50"></img> </a>
+          <a href="tel:7045089300"> <img src="img/call-img.png" width="50"></img></a>
+          <a href="https://api.whatsapp.com/send?phone=9549977744" title=""> <img src="img/facebook-img.png"  width="50"></img>  </a>
+          <a href="https://waze.com/ul?q={355 W Martin Luther King Jr Blvd, Charlotte, North Carolina}" title=""> <img src="img/instagram-img.png" width="50"></img> </a>
         </SocialMedia>
       </div>
     )
@@ -41,10 +41,11 @@ export class App extends Component {
 export default App;
 
 const SocialMedia = styled.div`
-  position: sticky;
+  position: fixed;
   bottom: 0;
-  left: 0;
-  right: 0;
-  justify-content: center;
-  display: flex;
+  margin-left: 50%;
+  border-radius: 50%;
+
 `
+
+
