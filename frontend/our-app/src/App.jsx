@@ -30,7 +30,7 @@ export class App extends Component {
 
         <SocialMedia>
           <a href="tel:7045089300"> <img src="img/call-img.png" width="50"></img></a>
-          <a href="https://api.whatsapp.com/send?phone=9549977744" title=""> <img src="img/facebook-img.png"  width="50"></img>  </a>
+          <a href="https://www.facebook.com/magiclockusa" title=""> <img src="img/facebook-img.png"  width="50"></img>  </a>
           <a href="https://waze.com/ul?q={355 W Martin Luther King Jr Blvd, Charlotte, North Carolina}" title=""> <img src="img/instagram-img.png" width="50"></img> </a>
         </SocialMedia>
       </div>
