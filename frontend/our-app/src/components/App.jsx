@@ -35,6 +35,7 @@ export class App extends Component {
       <div>
         <Navigation />
         <Header data={this.state.resumeData.Header} />
+        
         <About data={this.state.resumeData.About} />
         <Gallery />
         <Contact data={this.state.resumeData.Contact} />
