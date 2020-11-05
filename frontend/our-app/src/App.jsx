@@ -26,8 +26,8 @@ export class App extends Component {
         <Header data={this.state.landingPageData.Header} />
 
         <SocialMedia2>
-          <a href="https://www.facebook.com/magiclockusa" title=""> <img src="img/facebook-img.png"  width="50"></img>  </a>
-          <a href="https://waze.com/ul?q={355 W Martin Luther King Jr Blvd, Charlotte, North Carolina}" title=""> <img src="img/instagram-img.png" width="50"></img> </a>
+         <ul> <a href="https://www.facebook.com/magiclockusa" title=""> <img src="img/facebook-img.png"  width="50"></img>  </a></ul>
+         <ul> <a href="https://waze.com/ul?q={355 W Martin Luther King Jr Blvd, Charlotte, North Carolina}" title=""> <img src="img/instagram-img.png" width="50"></img> </a></ul>
         </SocialMedia2>
                 <About data={this.state.landingPageData.About} />
         <Gallery />
@@ -56,7 +56,7 @@ const SocialMedia2 = styled.div`
   position: absolute;
   // top: 80px;
   // left: 16px;
-  top: 16%;
+  top: 70%;
   left: 0%;
   // font-size: 18px;
 
