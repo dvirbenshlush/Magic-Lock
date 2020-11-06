@@ -749,32 +749,31 @@ function($) {
 
     // COLLAPSE DATA-API
     // =================
+
     $(document).on('click', () => {
         var element = $("[data-toggle=collapse]")
+        if (!element) return;
+
         var isCollapsed = element.hasClass("collapsed")
 
         if (!isCollapsed) {
-
-            if (!element.attr('data-target')) e.preventDefault()
-
-            var $target = getTargetFromTrigger(element)
-            var data = $target.data('bs.collapse')
-            var option = data ? 'toggle' : element.data()
-
-            Plugin.call($target, option)
+            toggleCollapseClick(element);
         }
     })
 
-    $(document).on('click.bs.collapse.data-api', '[data-toggle="collapse"]', function(e) {
-        var $this = $(this)
+    var toggleCollapseClick = (element) => {
+        if (!element.attr('data-target')) e.preventDefault()
 
-        if (!$this.attr('data-target')) e.preventDefault()
-
-        var $target = getTargetFromTrigger($this)
+        var $target = getTargetFromTrigger(element)
         var data = $target.data('bs.collapse')
-        var option = data ? 'toggle' : $this.data()
+        var option = data ? 'toggle' : element.data()
 
         Plugin.call($target, option)
+    }
+
+    $(document).on('click.bs.collapse.data-api', '[data-toggle="collapse"]', function(e) {
+        var $this = $(this)
+        toggleCollapseClick($this);
     })
 
 }(jQuery);
