@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import Navigation from './navigation';
 import Header from './header';
 import About from './about';
+import Pricing from './pricing';
 import Gallery from './gallery';
 import Contact from './contact';
 import $ from 'jquery';
@@ -35,7 +36,7 @@ export class App extends Component {
       <div>
         <Navigation />
         <Header data={this.state.resumeData.Header} />
-        
+        <Pricing data={this.state.resumeData.Pricing} />
         <About data={this.state.resumeData.About} />
         <Gallery />
         <Contact data={this.state.resumeData.Contact} />
