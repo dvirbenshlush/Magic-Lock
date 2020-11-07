@@ -5,21 +5,25 @@ export class Navigation extends Component {
       <nav id="menu" className="navbar navbar-default navbar-fixed-top">
         <div className="container">
           <div className="navbar-header">
+
             <button
               type="button"
               className="navbar-toggle collapsed"
               data-toggle="collapse"
               data-target="#bs-example-navbar-collapse-1"
             >
+              {/* <img id='img1' src= "img/magic-lock-logo.png" alt="logo"   /> */}
               {" "}
+   
               <span className="sr-only">Toggle navigation</span>{" "}
               <span className="icon-bar"></span>{" "}
+   
+              {/* <logo><img src= "img/magic-lock-logo.png" alt="logo"   /></logo>{" "} */}
               <span className="icon-bar"></span>{" "}
               <span className="icon-bar"></span>{" "}
             </button>
             <a className="navbar-brand page-scroll" href="#page-top">
-            {/* <span className="logo"> */}
-              {/* <img src= "img/magic-lock-logo.png" alt="logo"   /></span> */}
+              <div class="logo"><img src= "img/magic-lock-logo.png" alt="logo"  class="mobile" /></div>
             
             </a>{" "}
           </div>
@@ -68,3 +72,5 @@ export class Navigation extends Component {
 }
 
 export default Navigation;
+
+
