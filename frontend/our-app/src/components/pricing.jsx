@@ -28,19 +28,24 @@ export class pricing extends Component {
                       
                       </ul>
 Service we provide: <br/>
-* Car Lockout <br/>
-* Car Key Replacement <br/>
-* Car Key Program <br/>
-* Ignition Replacement <br/>
-* House Lockout <br/>
-* Office Lockout <br/>
-* Business Lockout <br/>
-* Lock Rekey <br/>
-* Lock Installation <br/> 
-* Lock Change <br/>
-* Safe Lockout<br/>
-                    <br/>
-                  
+* Car Lockout: 49-195 <br/>
+* Car Key Replacement: 125-295 <br/>
+* Car Key Program: 110-199 <br/>
+* Ignition Replacement : 220-395 <br/> 
+* House Lockout: 65-225 <br/>
+* Office Lockout: 65-225 <br/>
+* Business Lockout : 65-245 <br/>
+* Lock Rekey: 48-195 <br/>
+* Lock Installation: 95-195 <br/>
+* Lock Change: 50-250 <br/>
+* Safe Lockout: 150-350 <br/>
+<br/>
+<br/>
+<br/>
+* Prices above include a $29 trip charge <br/>
+* The prices above are an estimate, the total price will be given by the tech based on what needs to be done                    <br/>
+<br/>
+<br/>
                   </div>
                   <div className="col-lg-6 col-sm-6 col-xs-12">
                     <ul>
