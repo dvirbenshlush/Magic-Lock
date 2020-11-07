@@ -63,6 +63,7 @@ export class Contact extends Component {
             <div className="col-md-3 col-md-offset-1 contact-info">
               <div className="contact-item">
                 <p>
+                  
                   <span>
                     <i className="fa fa-phone"></i> Phone
                   </span>{" "}
