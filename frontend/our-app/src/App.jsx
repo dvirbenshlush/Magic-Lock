@@ -36,7 +36,7 @@ export class App extends Component {
         <Contact data={this.state.landingPageData.Contact} />
 
         <SocialMedia>
-          <a href="tel:7045089300"> <SocialMediaLine> CALL US <span>052-8406351</span> </SocialMediaLine></a>
+          <a href="tel:7045089300"> <SocialMediaLine> CALL US <span>704-508-9300</span> </SocialMediaLine></a>
         </SocialMedia>
 
       </div>
@@ -49,7 +49,7 @@ export default App;
 const SocialMediaLine = styled.h1`
 color:white;
 line-height: 10%;
-
+font-size:24;
 `
 
 
