@@ -31,8 +31,8 @@ export class App extends Component {
           <ul> <a href="https://waze.com/ul?q={355 W Martin Luther King Jr Blvd, Charlotte, North Carolina}" title=""> <img src="img/instagram-img.png" width="50"></img> </a></ul>
         </SocialMedia2>
         <About data={this.state.landingPageData.About} />
-        <Gallery />
         <Pricing />
+        <Gallery />
         <Contact data={this.state.landingPageData.Contact} />
 
         <SocialMedia>
