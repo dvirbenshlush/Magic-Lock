@@ -28,7 +28,7 @@ export class App extends Component {
 
         <SocialMedia2>
           <ul> <a href="https://www.facebook.com/magiclockusa" title=""> <img src="img/facebook-img.png" width="50"></img>  </a></ul>
-          <ul> <a href="https://waze.com/ul?q={355 W Martin Luther King Jr Blvd, Charlotte, North Carolina}" title=""> <img src="img/instagram-img.png" width="50"></img> </a></ul>
+          <ul> <a href="https://instagram.com/magic_lock_usa?igshid=1q6qxvdq9aocp" title=""> <img src="img/instagram-img.png" width="50"></img> </a></ul>
         </SocialMedia2>
         <About data={this.state.landingPageData.About} />
         <Pricing />
