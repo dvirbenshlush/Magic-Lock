@@ -17,7 +17,7 @@ export class pricing extends Component {
       <div id="pricing">
         <div className="container">
           <div className="row">
-            <div className="col-xs-12 col-md-6"> </div>
+            <div className="col-xs-12 col-md-12"> </div>
             <div className="col-xs-12 col-md-6">
               <div className="services">
                 <h2>Pricing</h2>
@@ -46,13 +46,13 @@ Service we provide: <br/>
 * The prices above are an estimate, the total price will be given by the tech based on what needs to be done                    <br/>
 <br/>
 <br/>
-                  </div>
-                  <div className="col-lg-6 col-sm-6 col-xs-12">
-                    <ul>
-                      {/* {this.props.data ? this.props.data.Why2.map((d, i) => <li key={`${d}-${i}`}> {d}</li>) : 'loading'} */}
+	
+				
+				<img src="https://royallocksmithnola.com/wp-content/uploads/2020/06/ezgif.com-gif-maker-18.jpg" alt="" title="ezgif.com-gif-maker (18)"/>
 
-                    </ul>
                   </div>
+
+                  
                 </div>
               </div>
             </div>
@@ -64,3 +64,4 @@ Service we provide: <br/>
 }
 
 export default pricing
+
